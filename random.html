@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        h1{
+            background: white;
+            text-align: center;
+            color: black;
+        }
+        p{
+            text-align: center;
+            color:black;
+            font-size: larger;
+        }
+        .form{
+            height: 250px;
+            width: 250px;
+            /*border: 15px black solid;*/
+            align-items: center;
+            margin:auto;
+            text-align: center;
+            justify-content: space-between;
+            box-shadow: 0px 0px 10px 5px gray;
+            margin-top: 10px;
+            background-color: blanchedalmond;
+            box-shadow: 20px,20px ,5px,7lightblue,inset;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gusee the Number</h1>
+    <p>We have selected a random  number between 1-100.see if you can Gusee It</p>
+    <div class="form">
+        <label for="guess">
+            Enter a guess:
+        </label>
+        <input type="text" id="guess" class="guess">
+        <input type="submit" value="Submit Guess" id="subi"
+        class="submitG">
+    </div>
+    <script >
+        let y= Math.random()*100;
+        let score=100;
+        document.getElementById("subi").onclick= function(){
+            let x=document.getElementById("guess").parseInt;
+           while(y !=x){
+
+           }
+            if(x==y){
+                alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+                    + guess + " GUESS ");
+            }
+            else{
+                guess++;
+                alert("SORRY YOU HAVE GUSSED INCORRECT")
+            }
+        }
+    </script>
+</body>
+</html>
